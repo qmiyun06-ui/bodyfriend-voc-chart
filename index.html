@@ -33,7 +33,7 @@
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
- 
+
 /* NAV */
 .nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 100; }
 .nav-brand { font-size: 15px; font-weight: 700; letter-spacing: -0.3px; }
@@ -41,11 +41,11 @@ body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: va
 .nav-tabs { display: flex; gap: 4px; }
 .nav-tab { padding: 6px 14px; border-radius: 999px; border: none; background: none; font-size: 13px; font-weight: 500; color: var(--text-sub); cursor: pointer; font-family: inherit; transition: all 0.15s; }
 .nav-tab.active { background: var(--accent); color: #fff; }
- 
+
 /* LAYOUT */
 .page { display: none; max-width: 680px; margin: 0 auto; padding: 1.5rem; }
 .page.active { display: block; }
- 
+
 /* SURVEY SELECT */
 .section-label { font-size: 11px; font-weight: 500; color: var(--text-hint); letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 12px; }
 .survey-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 2rem; }
@@ -57,7 +57,7 @@ body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: va
 .badge-s { background: #15803d; color: #ffffff; }
 .s-name { font-size: 13px; font-weight: 500; margin-bottom: 2px; }
 .s-desc { font-size: 11px; color: var(--text-sub); line-height: 1.4; }
- 
+
 /* FORM */
 .form-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
 .form-head { padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--border); }
@@ -69,7 +69,7 @@ body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: va
 .q-block { margin-bottom: 1.25rem; }
 .q-text { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 6px; line-height: 1.5; }
 .q-hint { font-size: 11px; color: var(--text-hint); margin-bottom: 8px; }
- 
+
 /* LIKERT */
 .likert-wrap { display: flex; gap: 6px; }
 .lk-btn { flex: 1; height: 36px; border: 1px solid var(--border); background: var(--surface); border-radius: var(--radius-sm); font-size: 12px; font-weight: 500; color: var(--text-sub); cursor: pointer; font-family: 'DM Mono', monospace; transition: all 0.1s; }
@@ -77,19 +77,19 @@ body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: va
 .lk-btn.sel { background: var(--accent); border-color: var(--accent); color: #fff; }
 .likert-ends { display: flex; justify-content: space-between; margin-top: 4px; }
 .likert-end { font-size: 10px; color: var(--text-hint); }
- 
+
 /* RADIO / CHECK */
 .opt-col { display: flex; flex-direction: column; gap: 8px; }
 .opt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .opt-item { display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer; }
 .opt-item input[type=radio], .opt-item input[type=checkbox] { width: 15px; height: 15px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
- 
+
 /* TEXT INPUT */
 input[type=text] { width: 100%; padding: 9px 12px; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 13px; font-family: inherit; color: var(--text); background: var(--bg); outline: none; }
 input[type=text]:focus { border-color: var(--accent); }
 textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 13px; font-family: inherit; color: var(--text); background: var(--bg); resize: vertical; min-height: 72px; outline: none; }
 textarea:focus { border-color: var(--accent); }
- 
+
 /* SUBMIT */
 .submit-area { padding: 1rem 1.5rem; border-top: 1px solid var(--border); }
 .btn-submit { width: 100%; padding: 13px; background: var(--accent); color: #fff; border: none; border-radius: var(--radius-sm); font-size: 14px; font-weight: 700; font-family: inherit; cursor: pointer; transition: opacity 0.15s; }
@@ -98,7 +98,7 @@ textarea:focus { border-color: var(--accent); }
 .submit-msg { text-align: center; padding: 1rem; font-size: 13px; }
 .submit-ok { color: var(--green); font-weight: 500; }
 .submit-err { color: #dc2626; }
- 
+
 /* DASHBOARD */
 .dash-top { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 1.5rem; }
 .metric { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; }
@@ -127,12 +127,12 @@ textarea:focus { border-color: var(--accent); }
 </head>
 <body>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
- 
+
 <!-- 배너 영역 (이미지 삽입용 — 직접 교체하세요) -->
 <div id="banner-area" style="width:100%;background:#e2e0da;min-height:80px;display:flex;align-items:center;justify-content:center;">
   <span style="font-size:12px;color:#a8a5a0;letter-spacing:0.4px">배너 이미지 영역 — 이미지 파일로 교체하세요</span>
 </div>
- 
+
 <nav class="nav">
   <div class="nav-brand">바디프렌드 <span>VOC 조사</span></div>
   <div class="nav-tabs">
@@ -140,7 +140,7 @@ textarea:focus { border-color: var(--accent); }
     <button class="nav-tab" onclick="showPage('dashboard')">대시보드</button>
   </div>
 </nav>
- 
+
 <!-- SURVEY PAGE -->
 <div class="page active" id="page-survey">
   <div class="section-label">응답자 유형 선택</div>
@@ -178,7 +178,7 @@ textarea:focus { border-color: var(--accent); }
   </div>
   <div id="form-container"></div>
 </div>
- 
+
 <!-- DASHBOARD PAGE -->
 <div class="page" id="page-dashboard">
   <div class="dash-header">
@@ -212,14 +212,14 @@ textarea:focus { border-color: var(--accent); }
   </div>
   <div id="dash-detail"></div>
 </div>
- 
+
 <script>
-const API = 'https://script.google.com/macros/s/AKfycbztA66tn6VCNN84mjtoeByEFoyiq2RMVGiS6-TXGriaKFHa7VGzbtlYgOP19QOtXCgR3g/exec';
+const API = 'https://script.google.com/macros/s/AKfycbyq5bhZWxZAbFCBFk5jy7o-z8ShosrVRVz5FMpT3F56CWcVCshNwWCDGayoKgi60R-Hew/exec';
 var currentSurvey = 'A';
 var formData = {};
 var dashData = {};
 var currentFilter = 'A';
- 
+
 var SURVEYS = {
   A: {
     title: '라운지 방문 고객 설문',
@@ -432,7 +432,7 @@ var SURVEYS = {
     ]
   }
 };
- 
+
 function showPage(p) {
   document.querySelectorAll('.page').forEach(function(el){ el.classList.remove('active'); });
   document.querySelectorAll('.nav-tab').forEach(function(el){ el.classList.remove('active'); });
@@ -440,7 +440,7 @@ function showPage(p) {
   event.target.classList.add('active');
   if (p === 'dashboard') loadDashboard();
 }
- 
+
 function selectSurvey(key) {
   currentSurvey = key;
   formData[key] = formData[key] || {};
@@ -449,12 +449,12 @@ function selectSurvey(key) {
   });
   renderForm(key);
 }
- 
+
 function renderForm(key) {
   var s = SURVEYS[key];
   var isStaff = ['D','E','F'].indexOf(key) !== -1;
   var isCustomer = ['A','B','C'].indexOf(key) !== -1;
- 
+
   var noticeHtml = '';
   if (isCustomer) {
     noticeHtml = '<div style="background:#f0fdf4;border:0.5px solid #bbf7d0;border-radius:8px;padding:12px 14px;margin-bottom:1.25rem;font-size:12px;color:#166534;line-height:1.7">'
@@ -468,12 +468,12 @@ function renderForm(key) {
       + '본 설문은 제품·배송·서비스 프로세스의 구조적 개선 방향을 파악하기 위한 R&D 조사입니다. 응답 내용은 개인 업무 평가 및 인사 자료로 활용되지 않으며, R&D 개선 목적 외에 사용되지 않습니다.'
       + '</div>';
   }
- 
+
   var html = '<div class="form-wrap">';
   html += '<div class="form-head"><div class="form-title">' + s.title + '</div><div class="form-meta">' + s.meta + '</div></div>';
   html += '<div class="form-body">';
   html += noticeHtml;
- 
+
   s.sections.forEach(function(sec) {
     html += '<div class="sec-divider">' + sec.label + '</div>';
     sec.fields.forEach(function(f) { html += renderField(f, key); });
@@ -483,7 +483,7 @@ function renderForm(key) {
   html += '</div>';
   document.getElementById('form-container').innerHTML = html;
 }
- 
+
 function renderField(f, key) {
   var h = '<div class="q-block"><div class="q-text">' + f.text + '</div>';
   if (f.type === 'likert') {
@@ -512,26 +512,26 @@ function renderField(f, key) {
   h += '</div>';
   return h;
 }
- 
+
 function pickLikert(btn) {
   var key = btn.dataset.key, id = btn.dataset.id, val = parseInt(btn.dataset.val);
   document.querySelectorAll('.lk-btn[data-key="' + key + '"][data-id="' + id + '"]').forEach(function(b){ b.classList.remove('sel'); });
   btn.classList.add('sel');
   setVal(key, id, val);
 }
- 
+
 function setVal(key, id, val) {
   if (!formData[key]) formData[key] = {};
   formData[key][id] = val;
 }
- 
+
 function setCheck(key, id, cb) {
   if (!formData[key]) formData[key] = {};
   if (!formData[key][id]) formData[key][id] = [];
   if (cb.checked) formData[key][id].push(cb.value);
   else formData[key][id] = formData[key][id].filter(function(v){ return v !== cb.value; });
 }
- 
+
 function submitForm(key) {
   var btn = document.getElementById('btn-' + key);
   var msg = document.getElementById('msg-' + key);
@@ -542,39 +542,26 @@ function submitForm(key) {
   Object.keys(payload).forEach(function(k) {
     if (Array.isArray(payload[k])) payload[k] = payload[k].join(', ');
   });
-  var iframe = document.getElementById('hidden_iframe');
-  var form = document.createElement('form');
-  form.method = 'POST';
-  form.action = API;
-  form.target = 'hidden_iframe';
-  form.style.display = 'none';
-  var input = document.createElement('input');
-  input.type = 'hidden';
-  input.name = 'payload';
-  input.value = JSON.stringify(payload);
-  form.appendChild(input);
-  document.body.appendChild(form);
-  iframe.onload = function() {
-    msg.innerHTML = '<span class="submit-ok">✓ 저장되었습니다. 응답해 주셔서 감사합니다.</span>';
-    formData[key] = {};
-    document.body.removeChild(form);
-    setTimeout(function(){ selectSurvey(key); btn.disabled = false; btn.textContent = '제출하기'; }, 1800);
-  };
-  form.submit();
-  setTimeout(function() {
-    msg.innerHTML = '<span class="submit-ok">✓ 저장되었습니다. 응답해 주셔서 감사합니다.</span>';
-    formData[key] = {};
-    if (document.body.contains(form)) document.body.removeChild(form);
-    setTimeout(function(){ selectSurvey(key); btn.disabled = false; btn.textContent = '제출하기'; }, 1800);
-  }, 2000);
+  var url = API + '?action=save&payload=' + encodeURIComponent(JSON.stringify(payload));
+  fetch(url)
+    .then(function(r) { return r.json(); })
+    .then(function(res) {
+      msg.innerHTML = '<span class="submit-ok">✓ 저장되었습니다. 응답해 주셔서 감사합니다.</span>';
+      formData[key] = {};
+      setTimeout(function(){ selectSurvey(key); btn.disabled = false; btn.textContent = '제출하기'; }, 1800);
+    })
+    .catch(function() {
+      msg.innerHTML = '<span class="submit-err">네트워크 오류입니다. 다시 시도해 주세요.</span>';
+      btn.disabled = false; btn.textContent = '제출하기';
+    });
 }
- 
+
 var chartInstances = {};
 function destroyChart(id) { if (chartInstances[id]) { chartInstances[id].destroy(); delete chartInstances[id]; } }
 function isDark() { return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches; }
 function tColor() { return isDark() ? '#d4d0ca' : '#6b6864'; }
 function gColor() { return isDark() ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.07)'; }
- 
+
 function loadDashboard() {
   var keys = ['A','B','C','D','E','F'];
   var total = 0; var allScores = []; var loaded = 0;
@@ -582,7 +569,7 @@ function loadDashboard() {
   document.getElementById('total-count').innerHTML = '...<span class="metric-unit">건</span>';
   document.getElementById('avg-score').innerHTML = '...<span class="metric-unit">점</span>';
   keys.forEach(function(k) {
-    fetch(API + '?survey=' + k)
+    fetch(API + '?action=load&survey=' + k)
       .then(function(r){ return r.json(); })
       .then(function(res) {
         dashData[k] = res.data || [];
@@ -607,7 +594,7 @@ function loadDashboard() {
       });
   });
 }
- 
+
 function renderDonut() {
   var keys = ['A','B','C','D','E','F'];
   var labels = ['A 라운지','B AS','C 배송','D 직원','E 서비스','F 배송엔지'];
@@ -624,37 +611,37 @@ function renderDonut() {
   var legend = document.getElementById('donut-legend');
   if (legend) legend.innerHTML = labels.map(function(l,i){ return '<span style="display:flex;align-items:center;gap:4px;font-size:11px;color:'+tColor()+'"><span style="width:10px;height:10px;border-radius:2px;background:'+colors[i]+';flex-shrink:0"></span>'+l+' '+data[i]+'</span>'; }).join('');
 }
- 
+
 function filterDash(key, btn) {
   currentFilter = key;
   document.querySelectorAll('.f-btn').forEach(function(b){ b.classList.remove('active'); });
   btn.classList.add('active');
   renderDetail(key);
 }
- 
+
 function renderDetail(key) {
   var dd = document.getElementById('dash-detail');
   var rows = dashData[key] || [];
   var s = SURVEYS[key];
   if (rows.length === 0) { dd.innerHTML = '<div class="empty">아직 <strong>' + s.title + '</strong>의 응답이 없습니다.</div>'; return; }
- 
+
   var likertFields = [];
   s.sections.forEach(function(sec){ sec.fields.forEach(function(f){ if (f.type==='likert') likertFields.push(f); }); });
   var maxScale = s.maxScale;
- 
+
   var hwIds = ['T1','T2','T3','T4','R1','R2','R3','RS1','RS2','A1','A2','A3','FIT1','FIT2','FIT3','FIT4'];
   var appIds = ['UX1','UX2','UX3','UX4','UX5','ND1','ND2','ND3','ND4','ND5','ND6','ND7'];
   var hwF = likertFields.filter(function(f){ return hwIds.indexOf(f.id)!==-1; });
   var appF = likertFields.filter(function(f){ return appIds.indexOf(f.id)!==-1; });
   var hasTwo = hwF.length>0 && appF.length>0;
- 
+
   function avg(f) {
     var vals = rows.map(function(r){ return parseFloat(r[f.id]); }).filter(function(v){ return !isNaN(v)&&v>=1; });
     return vals.length>0 ? parseFloat((vals.reduce(function(a,b){return a+b;},0)/vals.length).toFixed(2)) : 0;
   }
- 
+
   var html = '';
- 
+
   if (hasTwo) {
     html += '<div class="dash-card"><div class="dash-card-title">'+s.title+' — 하드웨어 vs 앱·UX ('+rows.length+'건 · /'+maxScale+'점)</div>';
     html += '<div style="display:flex;gap:14px;margin-bottom:10px">';
@@ -666,7 +653,7 @@ function renderDetail(key) {
     var h = Math.max(200, likertFields.length*34+60);
     html += '<div style="position:relative;width:100%;height:'+h+'px"><canvas id="hbarChart" role="img" aria-label="가로 막대 차트">가로 막대</canvas></div></div>';
   }
- 
+
   var hasAge = false;
   s.sections.forEach(function(sec){ sec.fields.forEach(function(f){ if(f.id==='age') hasAge=true; }); });
   if (hasAge) {
@@ -674,7 +661,7 @@ function renderDetail(key) {
     html += '<div class="dash-card"><div class="dash-card-title">연령대 분포 (만 나이 기준)</div>';
     html += '<div style="position:relative;width:100%;height:150px"><canvas id="ageChart" role="img" aria-label="연령대 분포">연령대</canvas></div></div>';
   }
- 
+
   var hasBarrier = false;
   s.sections.forEach(function(sec){ sec.fields.forEach(function(f){ if(f.id==='barrier') hasBarrier=true; }); });
   if (hasBarrier) {
@@ -686,7 +673,7 @@ function renderDetail(key) {
     bOpts.forEach(function(o,i){ html += '<span style="display:flex;align-items:center;gap:4px;font-size:11px;color:'+tColor()+'"><span style="width:10px;height:10px;border-radius:2px;background:'+bColors[i]+'"></span>'+o+'</span>'; });
     html += '</div></div>';
   }
- 
+
   var checkFields = [];
   s.sections.forEach(function(sec){ sec.fields.forEach(function(f){ if(f.type==='check') checkFields.push(f); }); });
   checkFields.forEach(function(f){
@@ -701,7 +688,7 @@ function renderDetail(key) {
     });
     html += '</div>';
   });
- 
+
   var comments = rows.map(function(r){ return r['comment']||r['OPP1']||''; }).filter(function(v){ return v&&v.trim(); });
   if (comments.length>0) {
     html += '<div class="dash-card"><div class="dash-card-title">주관식 응답 ('+comments.length+'건)</div>';
@@ -710,9 +697,9 @@ function renderDetail(key) {
     });
     html += '</div>';
   }
- 
+
   dd.innerHTML = html;
- 
+
   setTimeout(function() {
     if (hasTwo) {
       var allF = hwF.concat(appF);
@@ -747,7 +734,7 @@ function renderDetail(key) {
         }
       });
     }
- 
+
     if (hasAge) {
       var ageOpts2 = ['만 20~29세','만 30~39세','만 40~49세','만 50~59세','만 60세 이상'];
       var ageData = ageOpts2.map(function(o){ var c=0; rows.forEach(function(r){ if(r['age']===o) c++; }); return c; });
@@ -762,7 +749,7 @@ function renderDetail(key) {
         }
       });
     }
- 
+
     if (hasBarrier) {
       var bOpts2 = ['가격·비용','공간 문제','효과 불확실','경쟁사 대비 차별성','AS 우려','해당 없음'];
       var bColorsArr = ['#1a1918','#57534e','#a8a29e','#d6d3d1','#e7e5e4','#c8c4bc'];
@@ -777,7 +764,7 @@ function renderDetail(key) {
     }
   }, 50);
 }
- 
+
 selectSurvey('A');
 </script>
 </body>
